@@ -1,0 +1,4 @@
+/* pages/allLesson/allLesson.wxss */
+.search{
+  margin-bottom: 10px;
+}

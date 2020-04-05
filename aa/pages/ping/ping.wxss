@@ -1,0 +1,29 @@
+/* pages/ping/ping.wxss */
+.ping-wrap{
+  padding: 10px;
+}
+.title-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.section{
+  margin-top: 10px; 
+}
+textarea{
+  height: 80px;
+  border: 1px solid #c5c5c5;
+}
+.button-shangchan{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c5c5c5;
+  font-size: 60rpx;
+  line-height: 30px;
+  text-align: center;
+}
+button[type='primary']{
+  width: 100% !important;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+

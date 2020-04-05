@@ -1,0 +1,12 @@
+<!--components/stars/start.wxml-->
+<view>
+  <block wx:for="{{starts}}" wx:key="index" wx:for-item="c">
+    <slot name="before"></slot>
+    <image wx:if="{{c=='half'}}"  src="/images/star-half.png" 
+      class="star" bindtap="tap" data-num="{{index}}"></image>
+    <image wx:if="{{c=='off'}}" src="/images/star-off.png" 
+      class="star" bindtap="tap" data-num="{{index}}"></image>
+    <image wx:if="{{c=='on'}}" src="/images/star-on.png" 
+      class="star" bindtap="tap" data-num="{{index}}"></image>
+  </block>
+</view>

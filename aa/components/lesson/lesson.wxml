@@ -1,0 +1,16 @@
+<!--components/lesson/lesson.wxml-->
+<view class="less-item" bindtap="lessonTap" data-lessonName="{{lesson.name}}">
+  <!-- <view class="lessPic" style="background-image:url('{{lesson.imagePath}}')"></view> -->
+  <image class="lessPic" src="{{lesson.imagePath}}"></image>
+  <view>
+    <text>{{lesson.name}}</text>
+  </view>
+  <view>
+    <text>{{lesson.price}}</text>
+  </view>
+  <view>
+    <start-cmp score="{{lesson.starts}}">
+      <text slot="before">星级</text>
+    </start-cmp>
+  </view>
+</view>

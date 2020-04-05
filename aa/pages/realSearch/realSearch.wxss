@@ -1,0 +1,61 @@
+/* pages/realSearch/realSearch.wxss */
+page{
+  background: #ece7e7
+}
+.top,.history{
+  background: #ffffff;
+}
+.top{
+  margin-bottom: 40rpx;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx 20rpx 20rpx;
+}
+.search-wrap{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.icon{
+  margin-right: 5px;
+}
+input{
+  font-size: 12px;
+  width: 85%;
+}
+
+.comon{
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.hot{
+  padding-bottom: 20rpx;
+}
+.content{
+  padding: 20rpx;
+  max-width: 800rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fontC{
+  padding: 10rpx;
+  background: #f0f0f0;
+  font-size: 12px;
+  margin-right: 15rpx; 
+  margin-bottom: 15rpx 
+}
+.remove{
+  font-size: 14px;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  
+}

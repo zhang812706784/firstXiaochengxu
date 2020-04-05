@@ -1,0 +1,52 @@
+/* pages/detail/detail.wxss */
+page{
+  background: #f5f5f5;
+}
+.lesson-detail{
+  padding: 10px;
+  background: #ffffff;
+}
+.one{
+  margin-top: 10px;
+}
+
+.footer-wrap{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: #ffffff;
+  width: 100%;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+button{
+  background-color: transparent;
+  font-weight: normal !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+.modal-class{
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  left:0;
+  z-index: 1000;
+  transform: translateY(300px);
+}
+.modal-title{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-item{
+  padding: 10px;
+  border-bottom: 1px solid #f5f5f5; 
+}

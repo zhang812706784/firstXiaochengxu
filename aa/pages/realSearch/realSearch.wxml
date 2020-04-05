@@ -1,0 +1,45 @@
+<!--pages/realSearch/realSearch.wxml-->
+<view class="main-content">
+  <view class="top">
+    <view class="header">
+      <view class="search-wrap">
+        <icon type="search" size="20" class="icon"/>
+        <input type="text" focus="true" confirm-type="search"
+          placeholder="请输入" bindconfirm="search" value="{{searchCode}}"></input>
+        <icon type="cancel" size="14" color="#cccccc" catchtap="closeFun"/>
+      </view>
+      <text catchtap="cancel">取消</text>
+    
+    </view>
+    <view class="hot comon" wx:if="{{!showLesson}}">
+      <view class="new-title">
+        热门搜索
+      </view>
+      <view class="content">
+        <block wx:for="{{hotList}}" wx:key="*this">
+           <text class="fontC" bindtap="tapText" data-name="{{item}}">{{item}}</text>
+        </block>
+      </view>
+    </view>
+  </view>
+  
+  <view class="history comon"wx:if="{{!showLesson}}">
+    <view class="new-title">
+      历史搜索
+    </view>
+    <view class="content">
+        <block wx:for="{{storageList}}" wx:key="*this">
+          <text class="fontC">{{item}}</text>
+        </block>
+    </view>
+    <view class="remove" bindtap="clearAll">
+      清除历史搜索
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class="lesson-container" wx:if="{{showLesson}}">
+    <block wx:for="{{lessonList}}" wx:for-index="idx"  wx:key="idx">
+       <lesson-item lesson="{{item}}" bind:customBtn="aLesson"></lesson-item>
+    </block>
+  </view>
+</view>

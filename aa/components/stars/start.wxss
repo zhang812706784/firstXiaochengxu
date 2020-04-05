@@ -1,0 +1,5 @@
+/* components/stars/start.wxss */
+.star{
+  width: 30rpx;
+  height: 30rpx;
+}

@@ -1,0 +1,14 @@
+<!--pages/allLesson/allLesson.wxml-->
+<view class="main-content">
+    <view class="search">
+      <navigator class="search-shade" url="/pages/realSearch/realSearch">
+        <icon type="search" size="20"/>
+      </navigator>
+    </view>
+    <!-- 内容 -->
+    <view class="lesson-container">
+      <block wx:for="{{lessonList}}" wx:for-index="idx"  wx:key="idx">
+        <lesson-item lesson="{{item}}"></lesson-item>
+      </block>
+    </view>
+</view>

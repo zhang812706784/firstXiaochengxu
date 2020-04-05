@@ -1,0 +1,17 @@
+<!--pages/ping/ping.wxml-->
+<view class="ping-wrap">
+  <view class="title-wrap">
+    <text>评分</text>
+    <starts flag="{{flag}}"></starts>
+  </view>
+  <view class="section">
+    <textarea focus="{{flag}}" placeholder="请留言" show-confirm-bar="{{!flag}}"/>
+  </view>
+  <view class="button-shangchan" bindtap="imgClick" hidden="{{showImage}}">
+    +
+  </view>
+  <image src="{{imgSrc}}" hidden="{{!showImage}}" style="width:100rpx;height:100rpx"></image>
+  <button type="primary" bindtap="primary"> 确定 </button>
+  
+</view>
+

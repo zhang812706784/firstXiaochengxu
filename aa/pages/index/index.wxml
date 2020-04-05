@@ -1,0 +1,23 @@
+<!--pages/index/index.wxml-->
+<!-- 课程首页 -->
+<view class="main-content">
+  <!-- banner -->
+  <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image src="/images/{{item}}" class="img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="title-les">
+    <text class="new-title">最新课程</text>
+    <navigator url="/pages/allLesson/allLesson">全部课程></navigator>
+  </view>
+  <!-- 内容 -->
+  <view class="lesson-container">
+    <block wx:for="{{lessonList}}" wx:for-index="idx"  wx:key="idx">
+       <lesson-item lesson="{{item}}"></lesson-item>
+    </block>
+  </view>
+</view>
